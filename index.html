@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-family:cursive;
+            font-weight:bolder;
+            color: #333;
+            margin: 30px;
+        }
+
+        h1{
+            color: orangered;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin-left: 705px;
+            margin-top: 150px;
+            
+        }
+
+        form{
+            background-color:lightblue;
+            margin: 0 auto;
+            max-height: 800px;
+            max-width: 400px;
+            padding:20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label{
+            color: darkolivegreen;
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-style: oblique;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type="date"],
+        input[type="number"],
+        input[type="reset"],
+        input[type="submit"]{
+            width: 130px;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing:border-box;
+        }
+        input[type="range"] {
+            width: calc(100% - 22px);
+            margin: 0;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing:border-box;
+            color: chocolate;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Journal Form</h1>
+    <div>
+    <form action="">
+        <label for="date">Starting date:
+        <input type="date" id="date"></label>
+        <br/>
+        <label for="duration">Subscription duration: </label>
+        <input type="range" id="duration" min="1" max="10">
+        <br/>
+        <label for="occupation">Occupation: </label>
+        <input type="radio" name="Student" id="student">Student
+        <input type="radio" name="Professional" id="Professional">Professional
+        <input type="radio" id="other">Others
+        <br/><br/>
+        <label for="Journal Categories">Journal Categories:</label>
+        
+        <input type="checkbox" id="compsci">Computer Science
+        <br>
+        <input type="checkbox" id="Electrical">Electrical
+        <br>
+        <input type="checkbox" id="medicine">Medicine
+        <br>
+        <input type="checkbox" id="phy">Physics
+        <br>
+        <label for="number of Subscription">Number of Subscriptions:  
+        <input type="number" min="10" max="200"></label>
+        
+
+        <div style="text-align: center;">
+            <input type="submit">
+            <input type="reset">
+        </div>
+        
+    </form>
+</div>
+
+</body>
+</html>
